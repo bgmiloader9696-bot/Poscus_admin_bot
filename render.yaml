@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: poscus-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8992304126:AAGups0z9tf4Hl1lTCHtj7X8qqMlwjT9o64
+      - key: SERVER_URL
+        value: https://poscus-predicter.onrender.com
+      - key: ADMIN_TOKEN
+        value: VC5SA9AT0H2010
+      - key: ADMIN_IDS
+        value: 6548871396
